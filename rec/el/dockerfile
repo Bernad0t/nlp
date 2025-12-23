@@ -1,0 +1,12 @@
+FROM elixir:alpine
+
+WORKDIR /app
+
+# Копируем все необходимые файлы
+COPY rec.ex file.txt ./
+
+# Проверяем, что файлы скопировались
+RUN ls -la
+
+# Запускаем скрипт с файлом input.txt
+CMD ["elixir", "rec.ex", "file.txt"]

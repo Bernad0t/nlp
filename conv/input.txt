@@ -1,0 +1,14 @@
+ <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Пример страницы</title>
+    </head>
+    <body>
+        <h1>Привет, мир!</h1>
+        <p>Это пример HTML страницы.</p>
+        <p>Вот <strong>жирный</strong> и <em>курсивный</em> текст.</p>
+        <a href="https://example.com">Пример ссылки</a>
+        <br>
+        <img src="image.jpg" alt="Картинка">
+    </body>
+    </html>

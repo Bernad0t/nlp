@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+    <link href="style.css">
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Visit <a href="https://google.com">Google</a></p>
+    <a href="/about">About Us</a>
+    <a href='contact.html'>Contact</a>
+    <ul>
+        <li><a href="item1.html">Item 1</a></li>
+        <li><a href="item2.html">Item 2</a></li>
+    </ul>
+    <img src="pic.jpg" alt="Photo">
+    <a href=download.pdf>Download</a>
+    <footer>
+        <a href="#top">Back to Top</a>
+    </footer>
+</body>
+</html>

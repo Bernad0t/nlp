@@ -1,0 +1,8 @@
+FROM julia:alpine
+
+WORKDIR /app
+
+COPY extract.jl input.txt ./
+
+# Запускаем программу
+CMD ["julia", "extract.jl"]

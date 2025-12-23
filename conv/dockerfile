@@ -1,0 +1,9 @@
+FROM swift:latest
+
+WORKDIR /app
+
+# Копируем файлы
+COPY htmlToXml.swift input.txt ./
+
+# Запускаем программу
+CMD ["swift", "htmlToXml.swift"]

@@ -1,0 +1,13 @@
+FROM alpine:latest
+
+# Устанавливаем Lua и создаем симлинк
+RUN apk update && apk add --no-cache lua5.4 && \
+    ln -s /usr/bin/lua5.4 /usr/bin/lua
+
+WORKDIR /app
+
+# Копируем файлы
+COPY hanoi.lua input.txt ./
+
+# Запускаем программу
+CMD ["lua", "hanoi.lua"]
