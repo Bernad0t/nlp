@@ -1,0 +1,41 @@
+Веб-сайты для изучения программирования:
+1. https://scala-lang.org - официальный сайт Scala
+2. http://docs.scala-lang.org - документация Scala
+3. https://stackoverflow.com - вопросы и ответы
+4. http://github.com - хостинг кода
+5. https://github.com/scala/scala - репозиторий Scala
+
+Полезные ресурсы для разработчиков:
+6. https://docs.docker.com - документация Docker
+7. http://hub.docker.com - Docker Hub
+8. https://www.jetbrains.com/idea/ - IntelliJ IDEA
+9. http://spark.apache.org - Apache Spark
+10. https://akka.io - фреймворк Akka
+
+Новости и блоги:
+11. https://medium.com/tag/scala
+12. http://dev.to/scala
+13. https://www.reddit.com/r/scala/
+14. http://blog.rockthejvm.com
+15. https://scala-blogs.org
+
+Образовательные платформы:
+16. https://www.coursera.org/learn/scala
+17. http://www.scala-exercises.org
+18. https://www.udemy.com/course/scala-course/
+19. http://scalatutorials.com
+20. https://www.edx.org/learn/scala
+
+Дополнительные ресурсы:
+21. http://www.scala-sbt.org - сборщик проектов
+22. https://scalafmt.com - форматирование кода
+23. http://www.scalatest.org - тестирование
+24. https://scalameta.org - метапрограммирование
+25. http://scala-lang.org/api/current/ - Scala API
+
+Работа и сообщество:
+26. https://www.scala-lang.org/community/
+27. http://scalac.io - вакансии Scala
+28. https://www.meetup.com/topics/scala/
+29. http://discord.gg/scala
+30. https://twitter.com/scala_lang

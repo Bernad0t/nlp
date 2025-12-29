@@ -1,0 +1,33 @@
+fullName=Иванов Иван Иванович
+birthDate=1990-05-15
+gender=мужской
+
+email=ivan.ivanov@example.com
+phone=+79123456789
+address=г. Москва, ул. Пушкина, д. 25, кв. 123
+
+position=Ведущий разработчик
+company=ООО "ТехноСофт"
+experience=5 лет
+
+education=Высшее
+university=МГУ
+graduationYear=2013
+
+programmingLanguages=Python, JavaScript, D, C++
+frameworks=Django, React, Phobos
+databases=PostgreSQL, MongoDB
+
+github=https://github.com/ivanov
+linkedin=https://linkedin.com/in/ivanov
+
+hobbies=программирование, фотография, спорт
+languages=русский (родной), английский (С1)
+
+accountNumber=40817810123456789012
+balance=100000.50
+currency=RUB
+
+theme=dark
+notifications=true
+language=ru

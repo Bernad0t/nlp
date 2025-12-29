@@ -1,0 +1,25 @@
+# Используем официальный образ D от Digital Mars
+FROM dlang2/dmd-ubuntu:latest
+
+# Устанавливаем рабочую директорию
+WORKDIR /app
+
+# Копируем исходный код
+COPY . /app/
+
+# Устанавливаем необходимые зависимости
+RUN apt-get update && \
+    apt-get install -y \
+    build-essential \
+    git
+
+# Устанавливаем dub (обычно уже установлен в официальных образах D, но на всякий случай)
+RUN if ! command -v dub &> /dev/null; then \
+        apt-get install -y dub; \
+    fi
+
+# Компилируем программу
+RUN dub build --build=release
+
+# Определяем команду для запуска
+CMD ["./converter"]

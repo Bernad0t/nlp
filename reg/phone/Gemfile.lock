@@ -1,0 +1,3 @@
+bundle init
+echo "gem 'pcre'" >> Gemfile
+bundle install

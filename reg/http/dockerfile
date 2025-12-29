@@ -1,0 +1,24 @@
+# Используем актуальный образ OpenJDK
+FROM eclipse-temurin:17-jdk
+
+# Устанавливаем рабочую директорию
+WORKDIR /app
+
+# Устанавливаем Scala
+RUN apt-get update && \
+    apt-get install -y wget && \
+    wget https://downloads.lightbend.com/scala/2.13.12/scala-2.13.12.deb && \
+    apt-get install -y ./scala-2.13.12.deb && \
+    rm scala-2.13.12.deb && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Копируем файлы в контейнер
+COPY UniqueUrlExtractor.scala /app/
+COPY input.txt /app/
+
+# Компилируем Scala код
+RUN scalac UniqueUrlExtractor.scala
+
+# Запускаем приложение
+CMD ["scala", "UniqueUrlExtractor"]

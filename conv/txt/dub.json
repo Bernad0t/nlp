@@ -1,0 +1,5 @@
+{
+    "name": "converter",
+    "targetType": "executable",
+    "sourceFiles": ["converter.d"]
+}

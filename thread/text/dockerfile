@@ -1,0 +1,4 @@
+FROM clojure:temurin-21-lein-bullseye
+WORKDIR /app
+COPY . .
+CMD ["lein", "run"]

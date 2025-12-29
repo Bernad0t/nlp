@@ -1,0 +1,25 @@
+# Базовый образ с Ruby
+FROM ruby:3.2.2
+
+# Установка системных зависимостей
+RUN apt-get update && \
+    apt-get install -y libpcre2-dev build-essential
+
+# Установка рабочей директории
+WORKDIR /app
+
+# Копирование Gemfile и Gemfile.lock
+COPY Gemfile Gemfile.lock ./
+
+# Настройка сборки pcre2
+RUN bundle config build.pcre2 --with-pcre2-include=/usr/include/pcre2
+
+# Установка зависимостей
+RUN gem install pcre2
+RUN bundle install --jobs 4
+
+# Копирование остальных файлов проекта
+COPY . .
+
+# Определение команды запуска
+CMD ["ruby", "phone_validator.rb"]

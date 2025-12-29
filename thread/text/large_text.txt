@@ -1,0 +1,23 @@
+Parallel computing is a method of executing multiple operations simultaneously.
+The main idea of parallelism lies in dividing a large task into several smaller subtasks,
+which can be solved concurrently on different processor cores or computational nodes.
+
+Multithreaded programming has become the standard in modern software development.
+With the advent of multi-core processors, using threads allows for significantly faster data processing.
+Each thread performs its portion of work, and then the results are combined into a unified whole.
+
+Big data analysis requires efficient parallel processing algorithms.
+Machine learning, natural language processing, scientific computing - all these fields
+actively use parallel computing to accelerate work with large volumes of information.
+
+The actor model represents a mathematical model of parallel computation.
+In this model, each actor is a computational primitive that reacts to incoming messages.
+Actors can create new actors, send messages, and change their behavior.
+
+Distributed computing technologies enable the use of resources from multiple computers.
+Hadoop, Spark, Kafka - examples of frameworks for big data processing.
+These systems provide fault tolerance and scalability of computations.
+
+Optimizing parallel algorithms requires understanding hardware architecture.
+Cache memory, instruction pipelining, vector instructions - all these factors affect performance.
+Developers must consider hardware specifics when designing parallel systems.
